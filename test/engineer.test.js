@@ -1,4 +1,3 @@
-const { expect } = require('@jest/globals');
 const Engineer = require('../lib/engineer');
 
 test('Setting the Github account', () => {
