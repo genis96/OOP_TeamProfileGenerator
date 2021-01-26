@@ -8,7 +8,7 @@ test('Set school for intern', () => {
 
 test('getRole() returns \'Intern\'', () => {
     const testing = 'Engineer';
-    const x = new Intern("El", 1, 'el@testing.com', 'GitHubUser', 'St Johns');
+    const x = new Intern("El", 1, 'el@testing.com','St Johns');
     expect(x.getRole()).toBe(testing);
 });
 
