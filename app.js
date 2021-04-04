@@ -25,7 +25,7 @@ function manager() {
         },
         {
             type: 'number',
-            message: 'What the office number?',
+            message: 'Whats the office number?',
             name: 'officeNumber',
           },
           {
@@ -84,17 +84,17 @@ function addEmployee() {
         },
         {
           type: 'input',
-          message: 'What is his github username?',
+          message: 'Whats the github username?',
           name: 'github',
         },
         {
           type: 'number',
-          message: 'What is his id number?',
+          message: 'Whats the id number?',
           name: 'id',
         },
         {
           type: 'input',
-          message: 'What is his email?',
+          message: 'Whats the email?',
           name: 'email',
         },
       ]).then((answers) => {
