@@ -2,6 +2,9 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: beige;
 }
+#jumbo {
+    background-color: darkgray;
+}
 
 .card-body {
     background-color: cadetblue;
@@ -12,9 +15,6 @@ body {
     background-color: darkcyan;
 }
 
-#jumbo {
-    background-color: darkgray;
-}
 
 .list-group-item {
     background-color: darkorange;
