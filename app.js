@@ -38,8 +38,7 @@ function manager() {
             message: 'Whats the email?',
             name: 'email',
           },
-    ])
-    .then((answers) => {
+    ]).then((answers) => {
         const newManager = new Manager(
             answers.name,
             answers.id,
@@ -98,6 +97,61 @@ function addEmployee() {
           message: 'What is his email?',
           name: 'email',
         },
-      ])
+      ]).then((answers) => {
+        const newEngineer = new Engineer(
+          answers.name,
+          answers.id,
+          answers.email,
+          answers.github
+        );
+        team.push(newEngineer);
+        console.log(team);
+        addEmployee();
+      });
     }
+
+    function addIntern() {
+        inquirer
+          .prompt([
+            {
+              type: 'input',
+              message: 'What is the Interns name?',
+              name: 'name',
+            },
+            {
+              type: 'input',
+              message: 'What school did the intern attend?',
+              name: 'school',
+            },
+            {
+              type: 'number',
+              message: 'Whats the id number?',
+              name: 'id',
+            },
+            {
+              type: 'input',
+              message: 'Whats the email?',
+              name: 'email',
+            },
+          ]).then((answers) => {
+            const newIntern = new Intern(
+              answers.name,
+              answers.id,
+              answers.email,
+              answers.school
+            );
+            team.push(newIntern);
+            console.log(team);
+            addEmployee();
+          });
+        }
+    
+    function finishedInputs() {
+        const newPage = render(team, 'My Team');
+        fs.writeFile(outputPath, newPage, (err) => {
+            if(err) throw err;
+            console.log('file was created!');
+        });
+    }
+
 manager();
