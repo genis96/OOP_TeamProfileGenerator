@@ -1,0 +1,21 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: beige;
+}
+
+.card-body {
+    background-color: cadetblue;
+
+}
+
+.card-header {
+    background-color: darkcyan;
+}
+
+#jumbo {
+    background-color: darkgray;
+}
+
+.list-group-item {
+    background-color: darkorange;
+}
